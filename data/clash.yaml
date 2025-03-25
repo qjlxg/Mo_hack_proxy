@@ -5,52 +5,745 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇯🇵 日本04, server: gy.666666222.shop, port: 20008, type: ss, cipher: chacha20-ietf-poly1305, password: 590212fe-9fe4-4656-80a2-b90c4d2f9c39, udp: true}
-  - {name: 🇭🇰 香港01, server: gy.666666222.shop, port: 34338, type: ss, cipher: chacha20-ietf-poly1305, password: 590212fe-9fe4-4656-80a2-b90c4d2f9c39, udp: true}
-  - {name: XF-EFH, server: hk.kfsldflk.xyz, port: 1200, type: ss, cipher: aes-256-gcm, password: 590212fe-9fe4-4656-80a2-b90c4d2f9c39, udp: true}
-  - {name: 🇭🇰 香港03, server: gy.666666222.shop, port: 20052, type: ss, cipher: chacha20-ietf-poly1305, password: 590212fe-9fe4-4656-80a2-b90c4d2f9c39, udp: true}
-  - {name: 🇯🇵 日本01, server: gy.666666222.shop, port: 20002, type: ss, cipher: chacha20-ietf-poly1305, password: 590212fe-9fe4-4656-80a2-b90c4d2f9c39, udp: true}
-  - {name: 🇺🇸 美国 纽约01, server: gy.666666222.shop, port: 20013, type: ss, cipher: chacha20-ietf-poly1305, password: 590212fe-9fe4-4656-80a2-b90c4d2f9c39, udp: true}
-  - {name: 🇭🇰 香港02, server: gy.666666222.shop, port: 20035, type: ss, cipher: chacha20-ietf-poly1305, password: 590212fe-9fe4-4656-80a2-b90c4d2f9c39, udp: true}
-  - {name: 🇨🇳 台湾01, server: gy.666666222.shop, port: 47564, type: ss, cipher: chacha20-ietf-poly1305, password: 590212fe-9fe4-4656-80a2-b90c4d2f9c39, udp: true}
-  - {name: 🇯🇵 日本03, server: gy.666666222.shop, port: 20006, type: ss, cipher: chacha20-ietf-poly1305, password: 590212fe-9fe4-4656-80a2-b90c4d2f9c39, udp: true}
-  - {name: 🇨🇳 台湾 1, server: gy.666666222.shop, port: 20032, type: ss, cipher: chacha20-ietf-poly1305, password: 590212fe-9fe4-4656-80a2-b90c4d2f9c39, udp: true}
-  - {name: 🇯🇵 日本02, server: gy.666666222.shop, port: 20004, type: ss, cipher: chacha20-ietf-poly1305, password: 590212fe-9fe4-4656-80a2-b90c4d2f9c39, udp: true}
-  - {name: 🇺🇸 美国 纽约2, server: gy.666666222.shop, port: 20016, type: ss, cipher: chacha20-ietf-poly1305, password: 590212fe-9fe4-4656-80a2-b90c4d2f9c39, udp: true}
+  - {name: A-1J, server: xcsgp.cokecloud.top, port: 17463, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: 🇵🇱 VIP 波兰1, server: pl01.jiasudu.buzz, port: 47085, type: ss, cipher: aes-256-gcm, password: 58a9cffc-c8b4-4fed-8685-1838641fbfbc, udp: true}
+  - {name: B-1C, server: cokecloudjp.cokecloud.top, port: 43291, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: 🇺🇸 V1 | 美国2-1B, server: dd02.b99.buzz, port: 19201, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: A-1Y, server: thtf.cokecloud.top, port: 34523, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: 🇯🇵 日本-新疆直连-1A, server: xj.cokecloud.top, port: 32281, type: trojan, password: 21064a84-814f-4487-a4af-1450620d6531, sni: xj.cokecloud.top, udp: true}
+  - {name: VIP 非会员体验, server: gate.jiasudu.buzz, port: 47000, type: ss, cipher: aes-256-gcm, password: 58a9cffc-c8b4-4fed-8685-1838641fbfbc, udp: true}
+  - {name: 🇸🇬 V1 | 新加坡2, server: sg92.cctv14.xyz, port: 49042, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇯🇵 JAPAN 1, server: svip1.pingboy.top, port: 19015, type: vmess, uuid: 2f2da599-4348-43e3-be9f-aca3a715aa4f, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-纽约-F2-001-1A, server: 207.90.237.179, port: 22002, type: vmess, uuid: 357bb8ef-ac59-4b94-adbb-36f7b0d7b101, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-001-1F, server: biazh.mmzhk.website, port: 443, type: vmess, uuid: ccfdac44-b293-4dc8-b73d-f0dbcada01c4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: biazh.mmzhk.website}}, udp: true}
+  - {name: 🇭🇰 V1 | 香港8, server: hk98.cctv14.xyz, port: 49018, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇯🇵 日本-新疆直连-1B, server: xj.cokecloud.top, port: 32281, type: trojan, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, sni: xj.cokecloud.top, udp: true}
+  - {name: 🇺🇸 美国-纽约-F3-001-1A, server: 207.90.237.96, port: 23011, type: vmess, uuid: 357bb8ef-ac59-4b94-adbb-36f7b0d7b101, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇨🇦 加拿大-多伦多-001-1B, server: 50.114.177.145, port: 20030, type: vmess, uuid: 9fae1e50-0115-4e48-89c1-9eeac0ff4021, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国2, server: ppx1.6128888.xyz, port: 27822, type: vmess, uuid: c0e5a8d2-a093-4491-9979-c557085dbc3a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: C | 高速.2x倍率-1G, server: xcsgp.cokecloud.top, port: 29611, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: 🇰🇷 韩国 中转, server: vip.baima360.com, port: 42344, type: ss, cipher: chacha20-ietf-poly1305, password: f3017262-5f37-4fee-bf58-72b268949310, udp: true}
+  - {name: 🇨🇳 V1 | 台湾2, server: 223.244.16.218, port: 49022, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: A-1S, server: xckr.cokecloud.top, port: 33167, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: 🇺🇸 美国-纽约-F1-001-1F, server: 207.90.236.21, port: 21011, type: vmess, uuid: ccfdac44-b293-4dc8-b73d-f0dbcada01c4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: E-1B, server: cokecloudus.cokecloud.top, port: 20067, type: vmess, uuid: 21064a84-814f-4487-a4af-1450620d6531, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: B | 推荐-1C, server: xctransfer1st.cokecloud.top, port: 45449, type: vmess, uuid: 479a337c-90f4-429a-8ecd-e7dace964b6e, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F1-001-1B, server: 176.32.35.148, port: 21026, type: vmess, uuid: 9fae1e50-0115-4e48-89c1-9eeac0ff4021, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 VIP 香港2 高速, server: hk10.jiasudu.buzz, port: 47020, type: ss, cipher: aes-256-gcm, password: 58a9cffc-c8b4-4fed-8685-1838641fbfbc, udp: true}
+  - {name: A-1E, server: mltf.cokecloud.top, port: 13128, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: A-2A, server: autf.cokecloud.top, port: 18071, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: A-1O, server: frg.cokecloud.top, port: 13646, type: vmess, uuid: 21064a84-814f-4487-a4af-1450620d6531, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国3, server: ppx1.6128888.xyz, port: 27823, type: vmess, uuid: c0e5a8d2-a093-4491-9979-c557085dbc3a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇦🇺 澳大利亚, server: ppx1.6128888.xyz, port: 27833, type: vmess, uuid: c0e5a8d2-a093-4491-9979-c557085dbc3a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-1A, server: pop.ede9314c-61e5-4c9a-8e41-275a29f5120e.heima360.cc, port: 443, type: trojan, password: f3017262-5f37-4fee-bf58-72b268949310, udp: true}
+  - {name: A-1I, server: thtf.cokecloud.top, port: 34523, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: E-1A, server: xctransfer1st.cokecloud.top, port: 12672, type: vmess, uuid: 21064a84-814f-4487-a4af-1450620d6531, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 V1 | 美国1-1B, server: dd01.b99.buzz, port: 19201, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: A | 推荐-1A, server: xcsgp.cokecloud.top, port: 43461, type: ss, cipher: aes-128-gcm, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: 🇭🇰 HONGKONG 5, server: svip1.pingboy.top, port: 39840, type: vmess, uuid: 2f2da599-4348-43e3-be9f-aca3a715aa4f, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: C | 高速.2x倍率-1A, server: xctransfer1st.cokecloud.top, port: 38630, type: vmess, uuid: 21064a84-814f-4487-a4af-1450620d6531, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-纽约-F3-001-1C, server: 207.90.237.96, port: 23011, type: vmess, uuid: 140cf736-c4e5-40e7-b395-bfe00d0249af, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-1B, server: 45.83.140.22, port: 658, type: trojan, password: f3017262-5f37-4fee-bf58-72b268949310, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 中国-香港-F2-001-1B, server: 212.192.12.73, port: 22030, type: vmess, uuid: 9fae1e50-0115-4e48-89c1-9eeac0ff4021, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: A-1K, server: autf.cokecloud.top, port: 18071, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-001-1A, server: biazh.mmzhk.website, port: 443, type: vmess, uuid: 357bb8ef-ac59-4b94-adbb-36f7b0d7b101, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: biazh.mmzhk.website}}, udp: true}
+  - {name: C | 高速.2x倍率-1C, server: xcsgp.cokecloud.top, port: 29611, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F1-001-1E, server: 176.32.35.148, port: 21026, type: vmess, uuid: 4c94e77f-bf30-4e6e-836b-fdc2c86ed3df, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: A-1V, server: xcsgp.cokecloud.top, port: 11277, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: 🇺🇸 美国 中转-1B, server: vip.baima360.com, port: 20387, type: ss, cipher: chacha20-ietf-poly1305, password: f3017262-5f37-4fee-bf58-72b268949310, udp: true}
+  - {name: A-2F, server: rutf.cokecloud.top, port: 44753, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: D-1E, server: xctransfer1st.cokecloud.top, port: 33575, type: vmess, uuid: 479a337c-90f4-429a-8ecd-e7dace964b6e, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 中国-香港-F2-001-1F, server: 212.192.12.73, port: 22030, type: vmess, uuid: ccfdac44-b293-4dc8-b73d-f0dbcada01c4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 V1 | 美国4, server: 223.244.16.218, port: 49064, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F2-001-1F, server: 46.17.43.122, port: 22030, type: vmess, uuid: ccfdac44-b293-4dc8-b73d-f0dbcada01c4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: D-1G, server: cokecloudjp.cokecloud.top, port: 13215, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: 🇨🇦 加拿大-多伦多-001-1E, server: 50.114.177.145, port: 20030, type: vmess, uuid: 4c94e77f-bf30-4e6e-836b-fdc2c86ed3df, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: B | 负载均衡-1B, server: xcsgp.cokecloud.top, port: 10420, type: vmess, uuid: 479a337c-90f4-429a-8ecd-e7dace964b6e, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: E-1D, server: cokecloudus.cokecloud.top, port: 20067, type: vmess, uuid: 479a337c-90f4-429a-8ecd-e7dace964b6e, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: C | 高速.2x倍率-1F, server: cokecloudjp.cokecloud.top, port: 19439, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: 🇩🇪 VIP 德国1, server: de01.jiasudu.buzz, port: 47084, type: ss, cipher: aes-256-gcm, password: 58a9cffc-c8b4-4fed-8685-1838641fbfbc, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F1-001-1A, server: 176.32.35.148, port: 21026, type: vmess, uuid: 357bb8ef-ac59-4b94-adbb-36f7b0d7b101, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 V1 | 香港10, server: hk9a.cctv14.xyz, port: 49020, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇺🇸 美国1, server: ppx1.6128888.xyz, port: 27821, type: vmess, uuid: c0e5a8d2-a093-4491-9979-c557085dbc3a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: G | 多入口-1B, server: xctransfer1st.cokecloud.top, port: 44489, type: vmess, uuid: 479a337c-90f4-429a-8ecd-e7dace964b6e, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: B | 高速.2x倍率-1A, server: xckr.cokecloud.top, port: 28595, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: 🇸🇬 V1 | 新加坡1, server: sg91.cctv14.xyz, port: 49041, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇭🇰 V1 | 香港6, server: hk96.cctv14.xyz, port: 49016, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇭🇰 V1 | 香港1, server: hk91.cctv14.xyz, port: 49011, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇺🇸 美国-纽约-F2-001-1E, server: 207.90.237.179, port: 22002, type: vmess, uuid: 4c94e77f-bf30-4e6e-836b-fdc2c86ed3df, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 中国-香港-F3-001-1C, server: 212.192.13.68, port: 23030, type: vmess, uuid: 140cf736-c4e5-40e7-b395-bfe00d0249af, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇬🇧 VIP 英国1, server: gb01.jiasudu.buzz, port: 47081, type: ss, cipher: aes-256-gcm, password: 58a9cffc-c8b4-4fed-8685-1838641fbfbc, udp: true}
+  - {name: A-1W, server: xcsgp.cokecloud.top, port: 15447, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: 🇯🇵 V1 | 日本3, server: jp93.cctv14.xyz, port: 49033, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇺🇸 VIP 美国2, server: us02.jiasudu.buzz, port: 47062, type: ss, cipher: aes-256-gcm, password: 58a9cffc-c8b4-4fed-8685-1838641fbfbc, udp: true}
+  - {name: 🇫🇷 VIP 法国1, server: fr01.jiasudu.buzz, port: 47083, type: ss, cipher: aes-256-gcm, password: 58a9cffc-c8b4-4fed-8685-1838641fbfbc, udp: true}
+  - {name: 🇭🇰 中国-香港-F3-001-1A, server: 212.192.13.68, port: 23030, type: vmess, uuid: 357bb8ef-ac59-4b94-adbb-36f7b0d7b101, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: C | 高速.2x倍率-1E, server: xctransfer1st.cokecloud.top, port: 38630, type: vmess, uuid: 479a337c-90f4-429a-8ecd-e7dace964b6e, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: A-1M, server: frtf.cokecloud.top, port: 15468, type: vmess, uuid: 21064a84-814f-4487-a4af-1450620d6531, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇲🇾 马来西亚-1B, server: 103.75.188.189, port: 101, type: trojan, password: f3017262-5f37-4fee-bf58-72b268949310, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国, server: freeyx.cloudflare88.eu.org, port: 443, type: vmess, uuid: 57cc0080-5c14-40ea-a56c-4fca2d498f2b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: go.daluquan.top}}, udp: true}
+  - {name: 🇺🇸 美国-纽约-F1-001-1C, server: 207.90.236.21, port: 21011, type: vmess, uuid: 140cf736-c4e5-40e7-b395-bfe00d0249af, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: B-1D, server: cokecloudus.cokecloud.top, port: 25619, type: vmess, uuid: 479a337c-90f4-429a-8ecd-e7dace964b6e, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: B-1A, server: cokecloudjp.cokecloud.top, port: 43291, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F2-001-1A, server: 46.17.43.122, port: 22030, type: vmess, uuid: 357bb8ef-ac59-4b94-adbb-36f7b0d7b101, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: C | 高速.2x倍率-1D, server: cokecloudjp.cokecloud.top, port: 17318, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: 🇯🇵 VIP 日本2 高速, server: jp02.jiasudu.buzz, port: 47032, type: ss, cipher: aes-256-gcm, password: 58a9cffc-c8b4-4fed-8685-1838641fbfbc, udp: true}
+  - {name: 🇨🇦 加拿大-多伦多-001-1A, server: 50.114.177.145, port: 20030, type: vmess, uuid: 357bb8ef-ac59-4b94-adbb-36f7b0d7b101, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇹🇷 土耳其, server: ppx1.6128888.xyz, port: 27831, type: vmess, uuid: c0e5a8d2-a093-4491-9979-c557085dbc3a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: A-1T, server: cokecloudjp.cokecloud.top, port: 47393, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: C | 高速2x倍率-1B, server: xdtw.cokecloud.top, port: 53497, type: vmess, uuid: 479a337c-90f4-429a-8ecd-e7dace964b6e, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-纽约-F3-001-1D, server: 207.90.237.96, port: 23011, type: vmess, uuid: 2f3a0e29-320f-4abf-a499-880f5b4e0b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇸🇬 SINGAPORE 1, server: svip1.pingboy.top, port: 28673, type: vmess, uuid: 2f2da599-4348-43e3-be9f-aca3a715aa4f, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇷🇺 俄罗斯 中转, server: vip.baima360.com, port: 23499, type: ss, cipher: chacha20-ietf-poly1305, password: f3017262-5f37-4fee-bf58-72b268949310, udp: true}
+  - {name: A-1A, server: xdtw.cokecloud.top, port: 13255, type: vmess, uuid: 21064a84-814f-4487-a4af-1450620d6531, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 V1 | 日本2, server: jp92.cctv14.xyz, port: 49032, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: B | 高速.2x倍率-1B, server: xckr.cokecloud.top, port: 28595, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: D-1C, server: cokecloudjp.cokecloud.top, port: 13215, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: 🇯🇵 日本2, server: ppx1.6128888.xyz, port: 27827, type: vmess, uuid: c0e5a8d2-a093-4491-9979-c557085dbc3a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇳 台湾, server: ppx1.6128888.xyz, port: 27830, type: vmess, uuid: c0e5a8d2-a093-4491-9979-c557085dbc3a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F3-001-1C, server: 195.133.5.127, port: 23030, type: vmess, uuid: 140cf736-c4e5-40e7-b395-bfe00d0249af, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇩🇪 德国 中转, server: vip.baima360.com, port: 55997, type: ss, cipher: chacha20-ietf-poly1305, password: f3017262-5f37-4fee-bf58-72b268949310, udp: true}
+  - {name: 🇭🇰 中国-香港-F1-001-1F, server: 212.192.12.56, port: 21030, type: vmess, uuid: ccfdac44-b293-4dc8-b73d-f0dbcada01c4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: V0 | 免费体验 随机线路, server: hk90.cctv14.xyz, port: 49000, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇲🇾 马来西亚-1A, server: 103.75.189.152, port: 100, type: trojan, password: f3017262-5f37-4fee-bf58-72b268949310, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 中国-香港-F2-001-1E, server: 212.192.12.73, port: 22030, type: vmess, uuid: 4c94e77f-bf30-4e6e-836b-fdc2c86ed3df, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-纽约-F2-001-1D, server: 207.90.237.179, port: 22002, type: vmess, uuid: 2f3a0e29-320f-4abf-a499-880f5b4e0b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: D | 推荐-1A, server: xcsgp.cokecloud.top, port: 25878, type: vmess, uuid: 21064a84-814f-4487-a4af-1450620d6531, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇦 加拿大-多伦多-001-1D, server: 50.114.177.145, port: 20030, type: vmess, uuid: 2f3a0e29-320f-4abf-a499-880f5b4e0b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: A-1F, server: xcsgp.cokecloud.top, port: 11277, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: 🇨🇦 加拿大-多伦多-001-1C, server: 50.114.177.145, port: 20030, type: vmess, uuid: 140cf736-c4e5-40e7-b395-bfe00d0249af, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇩🇪 德国法兰克福, server: frankfurt.faforex.eu.org, port: 23451, type: vmess, uuid: 57cc0080-5c14-40ea-a56c-4fca2d498f2b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/itdog?ed=2560", headers: {Host: us-new03.daluquan.top}}, udp: true}
+  - {name: 🇺🇸 V1 | 美国3, server: 223.244.16.218, port: 49063, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇭🇰 中国-香港-F2-001-1C, server: 212.192.12.73, port: 22030, type: vmess, uuid: 140cf736-c4e5-40e7-b395-bfe00d0249af, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 HONGKONG 1, server: svip1.pingboy.top, port: 17993, type: vmess, uuid: 2f2da599-4348-43e3-be9f-aca3a715aa4f, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: D-1A, server: xctransfer1st.cokecloud.top, port: 33575, type: vmess, uuid: 21064a84-814f-4487-a4af-1450620d6531, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-1C, server: phx-plus-1ddns.faforex.eu.org, port: 23451, type: vmess, uuid: 57cc0080-5c14-40ea-a56c-4fca2d498f2b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: phx-plus-1ddns.faforex.eu.org}}, udp: true}
+  - {name: 🇭🇰 中国-香港-F2-001-1D, server: 212.192.12.73, port: 22030, type: vmess, uuid: 2f3a0e29-320f-4abf-a499-880f5b4e0b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇦🇷 V1 | 阿根廷1, server: 223.244.16.218, port: 49073, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-001-1C, server: biazh.mmzhk.website, port: 443, type: vmess, uuid: 140cf736-c4e5-40e7-b395-bfe00d0249af, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: biazh.mmzhk.website}}, udp: true}
+  - {name: A-2D, server: xcuk.cokecloud.top, port: 18227, type: vmess, uuid: 479a337c-90f4-429a-8ecd-e7dace964b6e, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 中国-香港-F3-001-1E, server: 212.192.13.68, port: 23030, type: vmess, uuid: 4c94e77f-bf30-4e6e-836b-fdc2c86ed3df, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: A | 负载均衡-1A, server: xctransfer1st.cokecloud.top, port: 21552, type: vmess, uuid: 21064a84-814f-4487-a4af-1450620d6531, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-001-1B, server: biazh.mmzhk.website, port: 443, type: vmess, uuid: 9fae1e50-0115-4e48-89c1-9eeac0ff4021, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: biazh.mmzhk.website}}, udp: true}
+  - {name: 🇸🇬 新加坡-1A, server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc, port: 443, type: trojan, password: f3017262-5f37-4fee-bf58-72b268949310, udp: true}
+  - {name: 🇭🇰 V1 | 香港9, server: hk99.cctv14.xyz, port: 49019, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: A-2E, server: frg.cokecloud.top, port: 13646, type: vmess, uuid: 479a337c-90f4-429a-8ecd-e7dace964b6e, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇳 V1 | 台湾1, server: 223.244.16.218, port: 49021, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇦🇺 VIP 澳大利亚1, server: au01.jiasudu.buzz, port: 47051, type: ss, cipher: aes-256-gcm, password: 58a9cffc-c8b4-4fed-8685-1838641fbfbc, udp: true}
+  - {name: B | 推荐-1A, server: xctransfer1st.cokecloud.top, port: 45449, type: vmess, uuid: 21064a84-814f-4487-a4af-1450620d6531, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: A-1P, server: rutf.cokecloud.top, port: 44753, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: 🇺🇸 美国-纽约-F3-001-1B, server: 207.90.237.96, port: 23011, type: vmess, uuid: 9fae1e50-0115-4e48-89c1-9eeac0ff4021, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: A | 推荐-1B, server: xcsgp.cokecloud.top, port: 43461, type: ss, cipher: aes-128-gcm, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: 🇸🇬 新加坡西部, server: westsg2-ddns.oraclenat.cc, port: 23452, type: vmess, uuid: 57cc0080-5c14-40ea-a56c-4fca2d498f2b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: westsg2-ddns.oraclenat.cc}}, udp: true}
+  - {name: 🇺🇸 美国-纽约-F1-001-1B, server: 207.90.236.21, port: 21011, type: vmess, uuid: 9fae1e50-0115-4e48-89c1-9eeac0ff4021, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: B-1B, server: cokecloudus.cokecloud.top, port: 25619, type: vmess, uuid: 21064a84-814f-4487-a4af-1450620d6531, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇸🇬 新加坡-1B, server: ppx1.6128888.xyz, port: 27838, type: vmess, uuid: c0e5a8d2-a093-4491-9979-c557085dbc3a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: E-1C, server: xctransfer1st.cokecloud.top, port: 12672, type: vmess, uuid: 479a337c-90f4-429a-8ecd-e7dace964b6e, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 日本, server: vip.baima360.com, port: 15888, type: ss, cipher: chacha20-ietf-poly1305, password: f3017262-5f37-4fee-bf58-72b268949310, udp: true}
+  - {name: 🇭🇰 VIP 香港1 高速, server: hk05.jiasudu.buzz, port: 47015, type: ss, cipher: aes-256-gcm, password: 58a9cffc-c8b4-4fed-8685-1838641fbfbc, udp: true}
+  - {name: 🇯🇵 日本1, server: ppx1.6128888.xyz, port: 27846, type: vmess, uuid: c0e5a8d2-a093-4491-9979-c557085dbc3a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 中国-香港-F2-001-1A, server: 212.192.12.73, port: 22030, type: vmess, uuid: 357bb8ef-ac59-4b94-adbb-36f7b0d7b101, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-纽约-F2-001-1B, server: 207.90.237.179, port: 22002, type: vmess, uuid: 9fae1e50-0115-4e48-89c1-9eeac0ff4021, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: C | 高速2x倍率-1A, server: xdtw.cokecloud.top, port: 53497, type: vmess, uuid: 21064a84-814f-4487-a4af-1450620d6531, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-001-1E, server: biazh.mmzhk.website, port: 443, type: vmess, uuid: 4c94e77f-bf30-4e6e-836b-fdc2c86ed3df, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: biazh.mmzhk.website}}, udp: true}
+  - {name: D-1H, server: cokecloudjp.cokecloud.top, port: 40793, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: 🇺🇸 VIP 美国1, server: us01.jiasudu.buzz, port: 47061, type: ss, cipher: aes-256-gcm, password: 58a9cffc-c8b4-4fed-8685-1838641fbfbc, udp: true}
+  - {name: 🇺🇸 美国-纽约-F3-001-1F, server: 207.90.237.96, port: 23011, type: vmess, uuid: ccfdac44-b293-4dc8-b73d-f0dbcada01c4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇰🇷 韩国, server: ppx1.6128888.xyz, port: 27842, type: vmess, uuid: c0e5a8d2-a093-4491-9979-c557085dbc3a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: D | 推荐-1B, server: xcsgp.cokecloud.top, port: 25878, type: vmess, uuid: 479a337c-90f4-429a-8ecd-e7dace964b6e, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: B | 推荐-1B, server: xdtw.cokecloud.top, port: 29299, type: vmess, uuid: 21064a84-814f-4487-a4af-1450620d6531, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 V1 | 美国1-1A, server: 223.244.16.218, port: 49061, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇺🇸 V1 | 美国5, server: 223.244.16.218, port: 49065, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇭🇰 香港 中转-1C, server: vip.baima360.com, port: 36214, type: ss, cipher: chacha20-ietf-poly1305, password: f3017262-5f37-4fee-bf58-72b268949310, udp: true}
+  - {name: C | 高速.2x倍率-1H, server: cokecloudjp.cokecloud.top, port: 17318, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: 🇭🇰 V1 | 香港2, server: hk92.cctv14.xyz, port: 49012, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: B | 负载均衡-1A, server: xcsgp.cokecloud.top, port: 10420, type: vmess, uuid: 21064a84-814f-4487-a4af-1450620d6531, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: B | 推荐-1D, server: xdtw.cokecloud.top, port: 29299, type: vmess, uuid: 479a337c-90f4-429a-8ecd-e7dace964b6e, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F2-001-1D, server: 46.17.43.122, port: 22030, type: vmess, uuid: 2f3a0e29-320f-4abf-a499-880f5b4e0b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-纽约-F1-001-1A, server: 207.90.236.21, port: 21011, type: vmess, uuid: 357bb8ef-ac59-4b94-adbb-36f7b0d7b101, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇯🇵 V1 | 日本4, server: jp94.cctv14.xyz, port: 49034, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F3-001-1B, server: 195.133.5.127, port: 23030, type: vmess, uuid: 9fae1e50-0115-4e48-89c1-9eeac0ff4021, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 香港 中转-1A, server: vip.baima360.com, port: 65519, type: ss, cipher: chacha20-ietf-poly1305, password: f3017262-5f37-4fee-bf58-72b268949310, udp: true}
+  - {name: 🇭🇰 中国-香港-F1-001-1C, server: 212.192.12.56, port: 21030, type: vmess, uuid: 140cf736-c4e5-40e7-b395-bfe00d0249af, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 香港, server: pop.05e2a910-30aa-49b7-8a4c-c548745c3a2d.heima360.cc, port: 443, type: trojan, password: f3017262-5f37-4fee-bf58-72b268949310, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F1-001-1D, server: 176.32.35.148, port: 21026, type: vmess, uuid: 2f3a0e29-320f-4abf-a499-880f5b4e0b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-纽约-F1-001-1D, server: 207.90.236.21, port: 21011, type: vmess, uuid: 2f3a0e29-320f-4abf-a499-880f5b4e0b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F3-001-1F, server: 195.133.5.127, port: 23030, type: vmess, uuid: ccfdac44-b293-4dc8-b73d-f0dbcada01c4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-纽约-001-1C, server: 207.90.238.136, port: 20030, type: vmess, uuid: 140cf736-c4e5-40e7-b395-bfe00d0249af, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇻🇳 V1 | 越南1, server: 223.244.16.218, port: 49048, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇯🇵 V1 | 日本1, server: jp91.cctv14.xyz, port: 49031, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇭🇰 中国-香港-F3-001-1F, server: 212.192.13.68, port: 23030, type: vmess, uuid: ccfdac44-b293-4dc8-b73d-f0dbcada01c4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: A-1U, server: mltf.cokecloud.top, port: 13128, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: 🇭🇰 中国-香港-F3-001-1D, server: 212.192.13.68, port: 23030, type: vmess, uuid: 2f3a0e29-320f-4abf-a499-880f5b4e0b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 V1 | 香港4, server: hk94.cctv14.xyz, port: 49014, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: A-1G, server: xcsgp.cokecloud.top, port: 15447, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: A-1H, server: turtf.cokecloud.top, port: 53355, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F3-001-1E, server: 195.133.5.127, port: 23030, type: vmess, uuid: 4c94e77f-bf30-4e6e-836b-fdc2c86ed3df, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国 中转-1A, server: vip.baima360.com, port: 17941, type: ss, cipher: chacha20-ietf-poly1305, password: f3017262-5f37-4fee-bf58-72b268949310, udp: true}
+  - {name: 🇺🇸 美国-纽约-001-1F, server: 207.90.238.136, port: 20030, type: vmess, uuid: ccfdac44-b293-4dc8-b73d-f0dbcada01c4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇨🇦 加拿大-多伦多-001-1F, server: 50.114.177.145, port: 20030, type: vmess, uuid: ccfdac44-b293-4dc8-b73d-f0dbcada01c4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-纽约-001-1B, server: 207.90.238.136, port: 20030, type: vmess, uuid: 9fae1e50-0115-4e48-89c1-9eeac0ff4021, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 香港2, server: ppx1.6128888.xyz, port: 27825, type: vmess, uuid: c0e5a8d2-a093-4491-9979-c557085dbc3a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇦 加拿大 中转, server: vip.baima360.com, port: 29292, type: ss, cipher: chacha20-ietf-poly1305, password: f3017262-5f37-4fee-bf58-72b268949310, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F2-001-1C, server: 46.17.43.122, port: 22030, type: vmess, uuid: 140cf736-c4e5-40e7-b395-bfe00d0249af, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-纽约-001-1A, server: 207.90.238.136, port: 20030, type: vmess, uuid: 357bb8ef-ac59-4b94-adbb-36f7b0d7b101, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: A-1D, server: cokecloudjp.cokecloud.top, port: 47393, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: A-1C, server: xckr.cokecloud.top, port: 33167, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: 🇪🇬 V1 | 埃及, server: 223.244.16.218, port: 49094, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F1-001-1C, server: 176.32.35.148, port: 21026, type: vmess, uuid: 140cf736-c4e5-40e7-b395-bfe00d0249af, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 中国-香港-F3-001-1B, server: 212.192.13.68, port: 23030, type: vmess, uuid: 9fae1e50-0115-4e48-89c1-9eeac0ff4021, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇹🇭 V1 | 泰国1, server: 223.244.16.218, port: 49047, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇭🇰 中国-香港-F1-001-1A, server: 212.192.12.56, port: 21030, type: vmess, uuid: 357bb8ef-ac59-4b94-adbb-36f7b0d7b101, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇨🇦 VIP 加拿大1, server: ca01.jiasudu.buzz, port: 47071, type: ss, cipher: aes-256-gcm, password: 58a9cffc-c8b4-4fed-8685-1838641fbfbc, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F2-001-1B, server: 46.17.43.122, port: 22030, type: vmess, uuid: 9fae1e50-0115-4e48-89c1-9eeac0ff4021, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 香港1, server: ppx1.6128888.xyz, port: 27824, type: vmess, uuid: c0e5a8d2-a093-4491-9979-c557085dbc3a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 VIP 日本1 高速, server: jp01.jiasudu.buzz, port: 47031, type: ss, cipher: aes-256-gcm, password: 58a9cffc-c8b4-4fed-8685-1838641fbfbc, udp: true}
+  - {name: 🇧🇷 巴西 中转, server: vip.baima360.com, port: 30752, type: ss, cipher: chacha20-ietf-poly1305, password: f3017262-5f37-4fee-bf58-72b268949310, udp: true}
+  - {name: D-1D, server: cokecloudjp.cokecloud.top, port: 40793, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: 🇭🇰 V1 | 香港3, server: hk93.cctv14.xyz, port: 49013, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: F-1A, server: xctransfer1st.cokecloud.top, port: 45861, type: vmess, uuid: 21064a84-814f-4487-a4af-1450620d6531, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港 中转-1B, server: vip.baima360.com, port: 36511, type: ss, cipher: chacha20-ietf-poly1305, password: f3017262-5f37-4fee-bf58-72b268949310, udp: true}
+  - {name: 🇺🇸 美国-纽约-F1-001-1E, server: 207.90.236.21, port: 21011, type: vmess, uuid: 4c94e77f-bf30-4e6e-836b-fdc2c86ed3df, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: A-2C, server: frtf.cokecloud.top, port: 15468, type: vmess, uuid: 479a337c-90f4-429a-8ecd-e7dace964b6e, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 中国-香港-F1-001-1D, server: 212.192.12.56, port: 21030, type: vmess, uuid: 2f3a0e29-320f-4abf-a499-880f5b4e0b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: A-1B, server: cokecloudjp.cokecloud.top, port: 20437, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: 🇭🇰 HONGKONG 3, server: svip1.pingboy.top, port: 38913, type: vmess, uuid: 2f2da599-4348-43e3-be9f-aca3a715aa4f, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 V1 | 韩国1, server: 223.244.16.218, port: 49026, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: C | 高速.2x倍率-1B, server: cokecloudjp.cokecloud.top, port: 19439, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F3-001-1D, server: 195.133.5.127, port: 23030, type: vmess, uuid: 2f3a0e29-320f-4abf-a499-880f5b4e0b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇫🇷 法国 中转, server: vip.baima360.com, port: 35330, type: ss, cipher: chacha20-ietf-poly1305, password: f3017262-5f37-4fee-bf58-72b268949310, udp: true}
+  - {name: D-1B, server: xdtw.cokecloud.top, port: 21073, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: 🇹🇷 V1 | 土耳其1, server: 223.244.16.218, port: 49050, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇻🇳 VIP 越南1, server: vn01.jiasudu.buzz, port: 47050, type: ss, cipher: aes-256-gcm, password: 58a9cffc-c8b4-4fed-8685-1838641fbfbc, udp: true}
+  - {name: A-1Z, server: xcsgp.cokecloud.top, port: 17463, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: G | 多入口-1A, server: xctransfer1st.cokecloud.top, port: 44489, type: vmess, uuid: 21064a84-814f-4487-a4af-1450620d6531, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-纽约-001-1D, server: 207.90.238.136, port: 20030, type: vmess, uuid: 2f3a0e29-320f-4abf-a499-880f5b4e0b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F2-001-1E, server: 46.17.43.122, port: 22030, type: vmess, uuid: 4c94e77f-bf30-4e6e-836b-fdc2c86ed3df, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 中国-香港-F1-001-1E, server: 212.192.12.56, port: 21030, type: vmess, uuid: 4c94e77f-bf30-4e6e-836b-fdc2c86ed3df, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-纽约-001-1E, server: 207.90.238.136, port: 20030, type: vmess, uuid: 4c94e77f-bf30-4e6e-836b-fdc2c86ed3df, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 V1 | 美国2-1A, server: 223.244.16.218, port: 49062, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇭🇰 V1 | 香港7, server: hk97.cctv14.xyz, port: 49017, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇭🇰 V1 | 香港5, server: hk95.cctv14.xyz, port: 49015, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: A-1L, server: idtf.cokecloud.top, port: 32725, type: ss, cipher: chacha20-ietf-poly1305, password: 21064a84-814f-4487-a4af-1450620d6531, udp: true}
+  - {name: 🇭🇰 中国-香港-F1-001-1B, server: 212.192.12.56, port: 21030, type: vmess, uuid: 9fae1e50-0115-4e48-89c1-9eeac0ff4021, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-纽约-F2-001-1F, server: 207.90.237.179, port: 22002, type: vmess, uuid: ccfdac44-b293-4dc8-b73d-f0dbcada01c4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇨🇳 VIP 台湾1, server: tw01.jiasudu.buzz, port: 47021, type: ss, cipher: aes-256-gcm, password: 58a9cffc-c8b4-4fed-8685-1838641fbfbc, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F3-001-1A, server: 195.133.5.127, port: 23030, type: vmess, uuid: 357bb8ef-ac59-4b94-adbb-36f7b0d7b101, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: A-1N, server: xcuk.cokecloud.top, port: 18227, type: vmess, uuid: 21064a84-814f-4487-a4af-1450620d6531, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇳 新疆测试线路, server: xj88.cctv14.xyz, port: 19201, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇯🇵 V1 | 日本5, server: jp95.cctv14.xyz, port: 49040, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇺🇸 美国-纽约-F3-001-1E, server: 207.90.237.96, port: 23011, type: vmess, uuid: 4c94e77f-bf30-4e6e-836b-fdc2c86ed3df, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 UNITED STATES 1, server: svip1.pingboy.top, port: 15327, type: vmess, uuid: 2f2da599-4348-43e3-be9f-aca3a715aa4f, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-纽约-F2-001-1C, server: 207.90.237.179, port: 22002, type: vmess, uuid: 140cf736-c4e5-40e7-b395-bfe00d0249af, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇬🇧 V1 | 英国1, server: 223.244.16.218, port: 49081, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: A-1x, server: turtf.cokecloud.top, port: 53355, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: A-1R, server: cokecloudjp.cokecloud.top, port: 20437, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: F-1B, server: xctransfer1st.cokecloud.top, port: 45861, type: vmess, uuid: 479a337c-90f4-429a-8ecd-e7dace964b6e, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇫🇷 法国, server: ppx1.6128888.xyz, port: 27835, type: vmess, uuid: c0e5a8d2-a093-4491-9979-c557085dbc3a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: A-2B, server: idtf.cokecloud.top, port: 32725, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
+  - {name: 🇨🇳 台湾 中转, server: vip.baima360.com, port: 41004, type: ss, cipher: chacha20-ietf-poly1305, password: f3017262-5f37-4fee-bf58-72b268949310, udp: true}
+  - {name: 🇸🇬 V1 | 新加坡3, server: sg93.cctv14.xyz, port: 49043, type: ss, cipher: aes-256-gcm, password: a94f3ef2-20a9-462e-9c7f-873317b0b4ca, udp: true}
+  - {name: 🇷🇺 俄罗斯-莫斯科-F1-001-1F, server: 176.32.35.148, port: 21026, type: vmess, uuid: ccfdac44-b293-4dc8-b73d-f0dbcada01c4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: A | 负载均衡-1B, server: xctransfer1st.cokecloud.top, port: 21552, type: vmess, uuid: 479a337c-90f4-429a-8ecd-e7dace964b6e, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: A-1Q, server: xdtw.cokecloud.top, port: 13255, type: vmess, uuid: 479a337c-90f4-429a-8ecd-e7dace964b6e, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-001-1D, server: biazh.mmzhk.website, port: 443, type: vmess, uuid: 2f3a0e29-320f-4abf-a499-880f5b4e0b1a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: biazh.mmzhk.website}}, udp: true}
+  - {name: D-1F, server: xdtw.cokecloud.top, port: 21073, type: ss, cipher: chacha20-ietf-poly1305, password: 479a337c-90f4-429a-8ecd-e7dace964b6e, udp: true}
 proxy-groups:
   - name: 手动切换
     type: select
     proxies:
-      - 🇯🇵 日本04
-      - 🇭🇰 香港01
-      - XF-EFH
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇺🇸 美国 纽约01
-      - 🇭🇰 香港02
-      - 🇨🇳 台湾01
-      - 🇯🇵 日本03
-      - 🇨🇳 台湾 1
-      - 🇯🇵 日本02
-      - 🇺🇸 美国 纽约2
+      - A-1J
+      - 🇵🇱 VIP 波兰1
+      - B-1C
+      - 🇺🇸 V1 | 美国2-1B
+      - A-1Y
+      - 🇯🇵 日本-新疆直连-1A
+      - VIP 非会员体验
+      - 🇸🇬 V1 | 新加坡2
+      - 🇯🇵 JAPAN 1
+      - 🇺🇸 美国-纽约-F2-001-1A
+      - 🇺🇸 美国-拉斯维加斯-001-1F
+      - 🇭🇰 V1 | 香港8
+      - 🇯🇵 日本-新疆直连-1B
+      - 🇺🇸 美国-纽约-F3-001-1A
+      - 🇨🇦 加拿大-多伦多-001-1B
+      - 🇺🇸 美国2
+      - C | 高速.2x倍率-1G
+      - 🇰🇷 韩国 中转
+      - 🇨🇳 V1 | 台湾2
+      - A-1S
+      - 🇺🇸 美国-纽约-F1-001-1F
+      - E-1B
+      - B | 推荐-1C
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1B
+      - 🇭🇰 VIP 香港2 高速
+      - A-1E
+      - A-2A
+      - A-1O
+      - 🇺🇸 美国3
+      - 🇦🇺 澳大利亚
+      - 🇺🇸 美国-1A
+      - A-1I
+      - E-1A
+      - 🇺🇸 V1 | 美国1-1B
+      - A | 推荐-1A
+      - 🇭🇰 HONGKONG 5
+      - C | 高速.2x倍率-1A
+      - 🇺🇸 美国-纽约-F3-001-1C
+      - 🇺🇸 美国-1B
+      - 🇭🇰 中国-香港-F2-001-1B
+      - A-1K
+      - 🇺🇸 美国-拉斯维加斯-001-1A
+      - C | 高速.2x倍率-1C
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1E
+      - A-1V
+      - 🇺🇸 美国 中转-1B
+      - A-2F
+      - D-1E
+      - 🇭🇰 中国-香港-F2-001-1F
+      - 🇺🇸 V1 | 美国4
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1F
+      - D-1G
+      - 🇨🇦 加拿大-多伦多-001-1E
+      - B | 负载均衡-1B
+      - E-1D
+      - C | 高速.2x倍率-1F
+      - 🇩🇪 VIP 德国1
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1A
+      - 🇭🇰 V1 | 香港10
+      - 🇺🇸 美国1
+      - G | 多入口-1B
+      - B | 高速.2x倍率-1A
+      - 🇸🇬 V1 | 新加坡1
+      - 🇭🇰 V1 | 香港6
+      - 🇭🇰 V1 | 香港1
+      - 🇺🇸 美国-纽约-F2-001-1E
+      - 🇭🇰 中国-香港-F3-001-1C
+      - 🇬🇧 VIP 英国1
+      - A-1W
+      - 🇯🇵 V1 | 日本3
+      - 🇺🇸 VIP 美国2
+      - 🇫🇷 VIP 法国1
+      - 🇭🇰 中国-香港-F3-001-1A
+      - C | 高速.2x倍率-1E
+      - A-1M
+      - 🇲🇾 马来西亚-1B
+      - 🇩🇪 德国
+      - 🇺🇸 美国-纽约-F1-001-1C
+      - B-1D
+      - B-1A
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1A
+      - C | 高速.2x倍率-1D
+      - 🇯🇵 VIP 日本2 高速
+      - 🇨🇦 加拿大-多伦多-001-1A
+      - 🇹🇷 土耳其
+      - A-1T
+      - C | 高速2x倍率-1B
+      - 🇺🇸 美国-纽约-F3-001-1D
+      - 🇸🇬 SINGAPORE 1
+      - 🇷🇺 俄罗斯 中转
+      - A-1A
+      - 🇯🇵 V1 | 日本2
+      - B | 高速.2x倍率-1B
+      - D-1C
+      - 🇯🇵 日本2
+      - 🇨🇳 台湾
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1C
+      - 🇩🇪 德国 中转
+      - 🇭🇰 中国-香港-F1-001-1F
+      - V0 | 免费体验 随机线路
+      - 🇲🇾 马来西亚-1A
+      - 🇭🇰 中国-香港-F2-001-1E
+      - 🇺🇸 美国-纽约-F2-001-1D
+      - D | 推荐-1A
+      - 🇨🇦 加拿大-多伦多-001-1D
+      - A-1F
+      - 🇨🇦 加拿大-多伦多-001-1C
+      - 🇩🇪 德国法兰克福
+      - 🇺🇸 V1 | 美国3
+      - 🇭🇰 中国-香港-F2-001-1C
+      - 🇭🇰 HONGKONG 1
+      - D-1A
+      - 🇺🇸 美国-1C
+      - 🇭🇰 中国-香港-F2-001-1D
+      - 🇦🇷 V1 | 阿根廷1
+      - 🇺🇸 美国-拉斯维加斯-001-1C
+      - A-2D
+      - 🇭🇰 中国-香港-F3-001-1E
+      - A | 负载均衡-1A
+      - 🇺🇸 美国-拉斯维加斯-001-1B
+      - 🇸🇬 新加坡-1A
+      - 🇭🇰 V1 | 香港9
+      - A-2E
+      - 🇨🇳 V1 | 台湾1
+      - 🇦🇺 VIP 澳大利亚1
+      - B | 推荐-1A
+      - A-1P
+      - 🇺🇸 美国-纽约-F3-001-1B
+      - A | 推荐-1B
+      - 🇸🇬 新加坡西部
+      - 🇺🇸 美国-纽约-F1-001-1B
+      - B-1B
+      - 🇸🇬 新加坡-1B
+      - E-1C
+      - 🇯🇵 日本
+      - 🇭🇰 VIP 香港1 高速
+      - 🇯🇵 日本1
+      - 🇭🇰 中国-香港-F2-001-1A
+      - 🇺🇸 美国-纽约-F2-001-1B
+      - C | 高速2x倍率-1A
+      - 🇺🇸 美国-拉斯维加斯-001-1E
+      - D-1H
+      - 🇺🇸 VIP 美国1
+      - 🇺🇸 美国-纽约-F3-001-1F
+      - 🇰🇷 韩国
+      - D | 推荐-1B
+      - B | 推荐-1B
+      - 🇺🇸 V1 | 美国1-1A
+      - 🇺🇸 V1 | 美国5
+      - 🇭🇰 香港 中转-1C
+      - C | 高速.2x倍率-1H
+      - 🇭🇰 V1 | 香港2
+      - B | 负载均衡-1A
+      - B | 推荐-1D
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1D
+      - 🇺🇸 美国-纽约-F1-001-1A
+      - 🇯🇵 V1 | 日本4
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1B
+      - 🇭🇰 香港 中转-1A
+      - 🇭🇰 中国-香港-F1-001-1C
+      - 🇭🇰 香港
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1D
+      - 🇺🇸 美国-纽约-F1-001-1D
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1F
+      - 🇺🇸 美国-纽约-001-1C
+      - 🇻🇳 V1 | 越南1
+      - 🇯🇵 V1 | 日本1
+      - 🇭🇰 中国-香港-F3-001-1F
+      - A-1U
+      - 🇭🇰 中国-香港-F3-001-1D
+      - 🇭🇰 V1 | 香港4
+      - A-1G
+      - A-1H
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1E
+      - 🇺🇸 美国 中转-1A
+      - 🇺🇸 美国-纽约-001-1F
+      - 🇨🇦 加拿大-多伦多-001-1F
+      - 🇺🇸 美国-纽约-001-1B
+      - 🇭🇰 香港2
+      - 🇨🇦 加拿大 中转
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1C
+      - 🇺🇸 美国-纽约-001-1A
+      - A-1D
+      - A-1C
+      - 🇪🇬 V1 | 埃及
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1C
+      - 🇭🇰 中国-香港-F3-001-1B
+      - 🇹🇭 V1 | 泰国1
+      - 🇭🇰 中国-香港-F1-001-1A
+      - 🇨🇦 VIP 加拿大1
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1B
+      - 🇭🇰 香港1
+      - 🇯🇵 VIP 日本1 高速
+      - 🇧🇷 巴西 中转
+      - D-1D
+      - 🇭🇰 V1 | 香港3
+      - F-1A
+      - 🇭🇰 香港 中转-1B
+      - 🇺🇸 美国-纽约-F1-001-1E
+      - A-2C
+      - 🇭🇰 中国-香港-F1-001-1D
+      - A-1B
+      - 🇭🇰 HONGKONG 3
+      - 🇰🇷 V1 | 韩国1
+      - C | 高速.2x倍率-1B
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1D
+      - 🇫🇷 法国 中转
+      - D-1B
+      - 🇹🇷 V1 | 土耳其1
+      - 🇻🇳 VIP 越南1
+      - A-1Z
+      - G | 多入口-1A
+      - 🇺🇸 美国-纽约-001-1D
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1E
+      - 🇭🇰 中国-香港-F1-001-1E
+      - 🇺🇸 美国-纽约-001-1E
+      - 🇺🇸 V1 | 美国2-1A
+      - 🇭🇰 V1 | 香港7
+      - 🇭🇰 V1 | 香港5
+      - A-1L
+      - 🇭🇰 中国-香港-F1-001-1B
+      - 🇺🇸 美国-纽约-F2-001-1F
+      - 🇨🇳 VIP 台湾1
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1A
+      - A-1N
+      - 🇨🇳 新疆测试线路
+      - 🇯🇵 V1 | 日本5
+      - 🇺🇸 美国-纽约-F3-001-1E
+      - 🇺🇸 UNITED STATES 1
+      - 🇺🇸 美国-纽约-F2-001-1C
+      - 🇬🇧 V1 | 英国1
+      - A-1x
+      - A-1R
+      - F-1B
+      - 🇫🇷 法国
+      - A-2B
+      - 🇨🇳 台湾 中转
+      - 🇸🇬 V1 | 新加坡3
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1F
+      - A | 负载均衡-1B
+      - A-1Q
+      - 🇺🇸 美国-拉斯维加斯-001-1D
+      - D-1F
   - name: 自动选择
     type: url-test
     url: https://www.google.com/favicon.ico
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本04
-      - 🇭🇰 香港01
-      - XF-EFH
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇺🇸 美国 纽约01
-      - 🇭🇰 香港02
-      - 🇨🇳 台湾01
-      - 🇯🇵 日本03
-      - 🇨🇳 台湾 1
-      - 🇯🇵 日本02
-      - 🇺🇸 美国 纽约2
+      - A-1J
+      - 🇵🇱 VIP 波兰1
+      - B-1C
+      - 🇺🇸 V1 | 美国2-1B
+      - A-1Y
+      - 🇯🇵 日本-新疆直连-1A
+      - VIP 非会员体验
+      - 🇸🇬 V1 | 新加坡2
+      - 🇯🇵 JAPAN 1
+      - 🇺🇸 美国-纽约-F2-001-1A
+      - 🇺🇸 美国-拉斯维加斯-001-1F
+      - 🇭🇰 V1 | 香港8
+      - 🇯🇵 日本-新疆直连-1B
+      - 🇺🇸 美国-纽约-F3-001-1A
+      - 🇨🇦 加拿大-多伦多-001-1B
+      - 🇺🇸 美国2
+      - C | 高速.2x倍率-1G
+      - 🇰🇷 韩国 中转
+      - 🇨🇳 V1 | 台湾2
+      - A-1S
+      - 🇺🇸 美国-纽约-F1-001-1F
+      - E-1B
+      - B | 推荐-1C
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1B
+      - 🇭🇰 VIP 香港2 高速
+      - A-1E
+      - A-2A
+      - A-1O
+      - 🇺🇸 美国3
+      - 🇦🇺 澳大利亚
+      - 🇺🇸 美国-1A
+      - A-1I
+      - E-1A
+      - 🇺🇸 V1 | 美国1-1B
+      - A | 推荐-1A
+      - 🇭🇰 HONGKONG 5
+      - C | 高速.2x倍率-1A
+      - 🇺🇸 美国-纽约-F3-001-1C
+      - 🇺🇸 美国-1B
+      - 🇭🇰 中国-香港-F2-001-1B
+      - A-1K
+      - 🇺🇸 美国-拉斯维加斯-001-1A
+      - C | 高速.2x倍率-1C
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1E
+      - A-1V
+      - 🇺🇸 美国 中转-1B
+      - A-2F
+      - D-1E
+      - 🇭🇰 中国-香港-F2-001-1F
+      - 🇺🇸 V1 | 美国4
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1F
+      - D-1G
+      - 🇨🇦 加拿大-多伦多-001-1E
+      - B | 负载均衡-1B
+      - E-1D
+      - C | 高速.2x倍率-1F
+      - 🇩🇪 VIP 德国1
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1A
+      - 🇭🇰 V1 | 香港10
+      - 🇺🇸 美国1
+      - G | 多入口-1B
+      - B | 高速.2x倍率-1A
+      - 🇸🇬 V1 | 新加坡1
+      - 🇭🇰 V1 | 香港6
+      - 🇭🇰 V1 | 香港1
+      - 🇺🇸 美国-纽约-F2-001-1E
+      - 🇭🇰 中国-香港-F3-001-1C
+      - 🇬🇧 VIP 英国1
+      - A-1W
+      - 🇯🇵 V1 | 日本3
+      - 🇺🇸 VIP 美国2
+      - 🇫🇷 VIP 法国1
+      - 🇭🇰 中国-香港-F3-001-1A
+      - C | 高速.2x倍率-1E
+      - A-1M
+      - 🇲🇾 马来西亚-1B
+      - 🇩🇪 德国
+      - 🇺🇸 美国-纽约-F1-001-1C
+      - B-1D
+      - B-1A
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1A
+      - C | 高速.2x倍率-1D
+      - 🇯🇵 VIP 日本2 高速
+      - 🇨🇦 加拿大-多伦多-001-1A
+      - 🇹🇷 土耳其
+      - A-1T
+      - C | 高速2x倍率-1B
+      - 🇺🇸 美国-纽约-F3-001-1D
+      - 🇸🇬 SINGAPORE 1
+      - 🇷🇺 俄罗斯 中转
+      - A-1A
+      - 🇯🇵 V1 | 日本2
+      - B | 高速.2x倍率-1B
+      - D-1C
+      - 🇯🇵 日本2
+      - 🇨🇳 台湾
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1C
+      - 🇩🇪 德国 中转
+      - 🇭🇰 中国-香港-F1-001-1F
+      - V0 | 免费体验 随机线路
+      - 🇲🇾 马来西亚-1A
+      - 🇭🇰 中国-香港-F2-001-1E
+      - 🇺🇸 美国-纽约-F2-001-1D
+      - D | 推荐-1A
+      - 🇨🇦 加拿大-多伦多-001-1D
+      - A-1F
+      - 🇨🇦 加拿大-多伦多-001-1C
+      - 🇩🇪 德国法兰克福
+      - 🇺🇸 V1 | 美国3
+      - 🇭🇰 中国-香港-F2-001-1C
+      - 🇭🇰 HONGKONG 1
+      - D-1A
+      - 🇺🇸 美国-1C
+      - 🇭🇰 中国-香港-F2-001-1D
+      - 🇦🇷 V1 | 阿根廷1
+      - 🇺🇸 美国-拉斯维加斯-001-1C
+      - A-2D
+      - 🇭🇰 中国-香港-F3-001-1E
+      - A | 负载均衡-1A
+      - 🇺🇸 美国-拉斯维加斯-001-1B
+      - 🇸🇬 新加坡-1A
+      - 🇭🇰 V1 | 香港9
+      - A-2E
+      - 🇨🇳 V1 | 台湾1
+      - 🇦🇺 VIP 澳大利亚1
+      - B | 推荐-1A
+      - A-1P
+      - 🇺🇸 美国-纽约-F3-001-1B
+      - A | 推荐-1B
+      - 🇸🇬 新加坡西部
+      - 🇺🇸 美国-纽约-F1-001-1B
+      - B-1B
+      - 🇸🇬 新加坡-1B
+      - E-1C
+      - 🇯🇵 日本
+      - 🇭🇰 VIP 香港1 高速
+      - 🇯🇵 日本1
+      - 🇭🇰 中国-香港-F2-001-1A
+      - 🇺🇸 美国-纽约-F2-001-1B
+      - C | 高速2x倍率-1A
+      - 🇺🇸 美国-拉斯维加斯-001-1E
+      - D-1H
+      - 🇺🇸 VIP 美国1
+      - 🇺🇸 美国-纽约-F3-001-1F
+      - 🇰🇷 韩国
+      - D | 推荐-1B
+      - B | 推荐-1B
+      - 🇺🇸 V1 | 美国1-1A
+      - 🇺🇸 V1 | 美国5
+      - 🇭🇰 香港 中转-1C
+      - C | 高速.2x倍率-1H
+      - 🇭🇰 V1 | 香港2
+      - B | 负载均衡-1A
+      - B | 推荐-1D
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1D
+      - 🇺🇸 美国-纽约-F1-001-1A
+      - 🇯🇵 V1 | 日本4
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1B
+      - 🇭🇰 香港 中转-1A
+      - 🇭🇰 中国-香港-F1-001-1C
+      - 🇭🇰 香港
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1D
+      - 🇺🇸 美国-纽约-F1-001-1D
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1F
+      - 🇺🇸 美国-纽约-001-1C
+      - 🇻🇳 V1 | 越南1
+      - 🇯🇵 V1 | 日本1
+      - 🇭🇰 中国-香港-F3-001-1F
+      - A-1U
+      - 🇭🇰 中国-香港-F3-001-1D
+      - 🇭🇰 V1 | 香港4
+      - A-1G
+      - A-1H
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1E
+      - 🇺🇸 美国 中转-1A
+      - 🇺🇸 美国-纽约-001-1F
+      - 🇨🇦 加拿大-多伦多-001-1F
+      - 🇺🇸 美国-纽约-001-1B
+      - 🇭🇰 香港2
+      - 🇨🇦 加拿大 中转
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1C
+      - 🇺🇸 美国-纽约-001-1A
+      - A-1D
+      - A-1C
+      - 🇪🇬 V1 | 埃及
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1C
+      - 🇭🇰 中国-香港-F3-001-1B
+      - 🇹🇭 V1 | 泰国1
+      - 🇭🇰 中国-香港-F1-001-1A
+      - 🇨🇦 VIP 加拿大1
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1B
+      - 🇭🇰 香港1
+      - 🇯🇵 VIP 日本1 高速
+      - 🇧🇷 巴西 中转
+      - D-1D
+      - 🇭🇰 V1 | 香港3
+      - F-1A
+      - 🇭🇰 香港 中转-1B
+      - 🇺🇸 美国-纽约-F1-001-1E
+      - A-2C
+      - 🇭🇰 中国-香港-F1-001-1D
+      - A-1B
+      - 🇭🇰 HONGKONG 3
+      - 🇰🇷 V1 | 韩国1
+      - C | 高速.2x倍率-1B
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1D
+      - 🇫🇷 法国 中转
+      - D-1B
+      - 🇹🇷 V1 | 土耳其1
+      - 🇻🇳 VIP 越南1
+      - A-1Z
+      - G | 多入口-1A
+      - 🇺🇸 美国-纽约-001-1D
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1E
+      - 🇭🇰 中国-香港-F1-001-1E
+      - 🇺🇸 美国-纽约-001-1E
+      - 🇺🇸 V1 | 美国2-1A
+      - 🇭🇰 V1 | 香港7
+      - 🇭🇰 V1 | 香港5
+      - A-1L
+      - 🇭🇰 中国-香港-F1-001-1B
+      - 🇺🇸 美国-纽约-F2-001-1F
+      - 🇨🇳 VIP 台湾1
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1A
+      - A-1N
+      - 🇨🇳 新疆测试线路
+      - 🇯🇵 V1 | 日本5
+      - 🇺🇸 美国-纽约-F3-001-1E
+      - 🇺🇸 UNITED STATES 1
+      - 🇺🇸 美国-纽约-F2-001-1C
+      - 🇬🇧 V1 | 英国1
+      - A-1x
+      - A-1R
+      - F-1B
+      - 🇫🇷 法国
+      - A-2B
+      - 🇨🇳 台湾 中转
+      - 🇸🇬 V1 | 新加坡3
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1F
+      - A | 负载均衡-1B
+      - A-1Q
+      - 🇺🇸 美国-拉斯维加斯-001-1D
+      - D-1F
   - name: 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -58,56 +751,612 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本04
-      - 🇭🇰 香港01
-      - XF-EFH
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇺🇸 美国 纽约01
-      - 🇭🇰 香港02
-      - 🇨🇳 台湾01
-      - 🇯🇵 日本03
-      - 🇨🇳 台湾 1
-      - 🇯🇵 日本02
-      - 🇺🇸 美国 纽约2
+      - A-1J
+      - 🇵🇱 VIP 波兰1
+      - B-1C
+      - 🇺🇸 V1 | 美国2-1B
+      - A-1Y
+      - 🇯🇵 日本-新疆直连-1A
+      - VIP 非会员体验
+      - 🇸🇬 V1 | 新加坡2
+      - 🇯🇵 JAPAN 1
+      - 🇺🇸 美国-纽约-F2-001-1A
+      - 🇺🇸 美国-拉斯维加斯-001-1F
+      - 🇭🇰 V1 | 香港8
+      - 🇯🇵 日本-新疆直连-1B
+      - 🇺🇸 美国-纽约-F3-001-1A
+      - 🇨🇦 加拿大-多伦多-001-1B
+      - 🇺🇸 美国2
+      - C | 高速.2x倍率-1G
+      - 🇰🇷 韩国 中转
+      - 🇨🇳 V1 | 台湾2
+      - A-1S
+      - 🇺🇸 美国-纽约-F1-001-1F
+      - E-1B
+      - B | 推荐-1C
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1B
+      - 🇭🇰 VIP 香港2 高速
+      - A-1E
+      - A-2A
+      - A-1O
+      - 🇺🇸 美国3
+      - 🇦🇺 澳大利亚
+      - 🇺🇸 美国-1A
+      - A-1I
+      - E-1A
+      - 🇺🇸 V1 | 美国1-1B
+      - A | 推荐-1A
+      - 🇭🇰 HONGKONG 5
+      - C | 高速.2x倍率-1A
+      - 🇺🇸 美国-纽约-F3-001-1C
+      - 🇺🇸 美国-1B
+      - 🇭🇰 中国-香港-F2-001-1B
+      - A-1K
+      - 🇺🇸 美国-拉斯维加斯-001-1A
+      - C | 高速.2x倍率-1C
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1E
+      - A-1V
+      - 🇺🇸 美国 中转-1B
+      - A-2F
+      - D-1E
+      - 🇭🇰 中国-香港-F2-001-1F
+      - 🇺🇸 V1 | 美国4
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1F
+      - D-1G
+      - 🇨🇦 加拿大-多伦多-001-1E
+      - B | 负载均衡-1B
+      - E-1D
+      - C | 高速.2x倍率-1F
+      - 🇩🇪 VIP 德国1
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1A
+      - 🇭🇰 V1 | 香港10
+      - 🇺🇸 美国1
+      - G | 多入口-1B
+      - B | 高速.2x倍率-1A
+      - 🇸🇬 V1 | 新加坡1
+      - 🇭🇰 V1 | 香港6
+      - 🇭🇰 V1 | 香港1
+      - 🇺🇸 美国-纽约-F2-001-1E
+      - 🇭🇰 中国-香港-F3-001-1C
+      - 🇬🇧 VIP 英国1
+      - A-1W
+      - 🇯🇵 V1 | 日本3
+      - 🇺🇸 VIP 美国2
+      - 🇫🇷 VIP 法国1
+      - 🇭🇰 中国-香港-F3-001-1A
+      - C | 高速.2x倍率-1E
+      - A-1M
+      - 🇲🇾 马来西亚-1B
+      - 🇩🇪 德国
+      - 🇺🇸 美国-纽约-F1-001-1C
+      - B-1D
+      - B-1A
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1A
+      - C | 高速.2x倍率-1D
+      - 🇯🇵 VIP 日本2 高速
+      - 🇨🇦 加拿大-多伦多-001-1A
+      - 🇹🇷 土耳其
+      - A-1T
+      - C | 高速2x倍率-1B
+      - 🇺🇸 美国-纽约-F3-001-1D
+      - 🇸🇬 SINGAPORE 1
+      - 🇷🇺 俄罗斯 中转
+      - A-1A
+      - 🇯🇵 V1 | 日本2
+      - B | 高速.2x倍率-1B
+      - D-1C
+      - 🇯🇵 日本2
+      - 🇨🇳 台湾
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1C
+      - 🇩🇪 德国 中转
+      - 🇭🇰 中国-香港-F1-001-1F
+      - V0 | 免费体验 随机线路
+      - 🇲🇾 马来西亚-1A
+      - 🇭🇰 中国-香港-F2-001-1E
+      - 🇺🇸 美国-纽约-F2-001-1D
+      - D | 推荐-1A
+      - 🇨🇦 加拿大-多伦多-001-1D
+      - A-1F
+      - 🇨🇦 加拿大-多伦多-001-1C
+      - 🇩🇪 德国法兰克福
+      - 🇺🇸 V1 | 美国3
+      - 🇭🇰 中国-香港-F2-001-1C
+      - 🇭🇰 HONGKONG 1
+      - D-1A
+      - 🇺🇸 美国-1C
+      - 🇭🇰 中国-香港-F2-001-1D
+      - 🇦🇷 V1 | 阿根廷1
+      - 🇺🇸 美国-拉斯维加斯-001-1C
+      - A-2D
+      - 🇭🇰 中国-香港-F3-001-1E
+      - A | 负载均衡-1A
+      - 🇺🇸 美国-拉斯维加斯-001-1B
+      - 🇸🇬 新加坡-1A
+      - 🇭🇰 V1 | 香港9
+      - A-2E
+      - 🇨🇳 V1 | 台湾1
+      - 🇦🇺 VIP 澳大利亚1
+      - B | 推荐-1A
+      - A-1P
+      - 🇺🇸 美国-纽约-F3-001-1B
+      - A | 推荐-1B
+      - 🇸🇬 新加坡西部
+      - 🇺🇸 美国-纽约-F1-001-1B
+      - B-1B
+      - 🇸🇬 新加坡-1B
+      - E-1C
+      - 🇯🇵 日本
+      - 🇭🇰 VIP 香港1 高速
+      - 🇯🇵 日本1
+      - 🇭🇰 中国-香港-F2-001-1A
+      - 🇺🇸 美国-纽约-F2-001-1B
+      - C | 高速2x倍率-1A
+      - 🇺🇸 美国-拉斯维加斯-001-1E
+      - D-1H
+      - 🇺🇸 VIP 美国1
+      - 🇺🇸 美国-纽约-F3-001-1F
+      - 🇰🇷 韩国
+      - D | 推荐-1B
+      - B | 推荐-1B
+      - 🇺🇸 V1 | 美国1-1A
+      - 🇺🇸 V1 | 美国5
+      - 🇭🇰 香港 中转-1C
+      - C | 高速.2x倍率-1H
+      - 🇭🇰 V1 | 香港2
+      - B | 负载均衡-1A
+      - B | 推荐-1D
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1D
+      - 🇺🇸 美国-纽约-F1-001-1A
+      - 🇯🇵 V1 | 日本4
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1B
+      - 🇭🇰 香港 中转-1A
+      - 🇭🇰 中国-香港-F1-001-1C
+      - 🇭🇰 香港
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1D
+      - 🇺🇸 美国-纽约-F1-001-1D
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1F
+      - 🇺🇸 美国-纽约-001-1C
+      - 🇻🇳 V1 | 越南1
+      - 🇯🇵 V1 | 日本1
+      - 🇭🇰 中国-香港-F3-001-1F
+      - A-1U
+      - 🇭🇰 中国-香港-F3-001-1D
+      - 🇭🇰 V1 | 香港4
+      - A-1G
+      - A-1H
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1E
+      - 🇺🇸 美国 中转-1A
+      - 🇺🇸 美国-纽约-001-1F
+      - 🇨🇦 加拿大-多伦多-001-1F
+      - 🇺🇸 美国-纽约-001-1B
+      - 🇭🇰 香港2
+      - 🇨🇦 加拿大 中转
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1C
+      - 🇺🇸 美国-纽约-001-1A
+      - A-1D
+      - A-1C
+      - 🇪🇬 V1 | 埃及
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1C
+      - 🇭🇰 中国-香港-F3-001-1B
+      - 🇹🇭 V1 | 泰国1
+      - 🇭🇰 中国-香港-F1-001-1A
+      - 🇨🇦 VIP 加拿大1
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1B
+      - 🇭🇰 香港1
+      - 🇯🇵 VIP 日本1 高速
+      - 🇧🇷 巴西 中转
+      - D-1D
+      - 🇭🇰 V1 | 香港3
+      - F-1A
+      - 🇭🇰 香港 中转-1B
+      - 🇺🇸 美国-纽约-F1-001-1E
+      - A-2C
+      - 🇭🇰 中国-香港-F1-001-1D
+      - A-1B
+      - 🇭🇰 HONGKONG 3
+      - 🇰🇷 V1 | 韩国1
+      - C | 高速.2x倍率-1B
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1D
+      - 🇫🇷 法国 中转
+      - D-1B
+      - 🇹🇷 V1 | 土耳其1
+      - 🇻🇳 VIP 越南1
+      - A-1Z
+      - G | 多入口-1A
+      - 🇺🇸 美国-纽约-001-1D
+      - 🇷🇺 俄罗斯-莫斯科-F2-001-1E
+      - 🇭🇰 中国-香港-F1-001-1E
+      - 🇺🇸 美国-纽约-001-1E
+      - 🇺🇸 V1 | 美国2-1A
+      - 🇭🇰 V1 | 香港7
+      - 🇭🇰 V1 | 香港5
+      - A-1L
+      - 🇭🇰 中国-香港-F1-001-1B
+      - 🇺🇸 美国-纽约-F2-001-1F
+      - 🇨🇳 VIP 台湾1
+      - 🇷🇺 俄罗斯-莫斯科-F3-001-1A
+      - A-1N
+      - 🇨🇳 新疆测试线路
+      - 🇯🇵 V1 | 日本5
+      - 🇺🇸 美国-纽约-F3-001-1E
+      - 🇺🇸 UNITED STATES 1
+      - 🇺🇸 美国-纽约-F2-001-1C
+      - 🇬🇧 V1 | 英国1
+      - A-1x
+      - A-1R
+      - F-1B
+      - 🇫🇷 法国
+      - A-2B
+      - 🇨🇳 台湾 中转
+      - 🇸🇬 V1 | 新加坡3
+      - 🇷🇺 俄罗斯-莫斯科-F1-001-1F
+      - A | 负载均衡-1B
+      - A-1Q
+      - 🇺🇸 美国-拉斯维加斯-001-1D
+      - D-1F
   - name: 中国节点
     type: select
     proxies:
-      - 🇭🇰 香港01
-      - 🇭🇰 香港03
-      - 🇭🇰 香港02
-      - 🇨🇳 台湾01
-      - 🇨🇳 台湾 1
+      - 🇭🇰 V1 | 香港8
+      - 🇨🇳 V1 | 台湾2
+      - 🇭🇰 VIP 香港2 高速
+      - 🇭🇰 中国-香港-F2-001-1B
+      - 🇭🇰 中国-香港-F2-001-1F
+      - 🇭🇰 V1 | 香港10
+      - 🇭🇰 V1 | 香港6
+      - 🇭🇰 V1 | 香港1
+      - 🇭🇰 中国-香港-F3-001-1C
+      - 🇭🇰 中国-香港-F3-001-1A
+      - 🇨🇳 台湾
+      - 🇭🇰 中国-香港-F1-001-1F
+      - 🇭🇰 中国-香港-F2-001-1E
+      - 🇭🇰 中国-香港-F2-001-1C
+      - 🇭🇰 中国-香港-F2-001-1D
+      - 🇭🇰 中国-香港-F3-001-1E
+      - 🇭🇰 V1 | 香港9
+      - 🇨🇳 V1 | 台湾1
+      - 🇭🇰 VIP 香港1 高速
+      - 🇭🇰 中国-香港-F2-001-1A
+      - 🇭🇰 香港 中转-1C
+      - 🇭🇰 V1 | 香港2
+      - 🇭🇰 香港 中转-1A
+      - 🇭🇰 中国-香港-F1-001-1C
+      - 🇭🇰 香港
+      - 🇭🇰 中国-香港-F3-001-1F
+      - 🇭🇰 中国-香港-F3-001-1D
+      - 🇭🇰 V1 | 香港4
+      - 🇭🇰 香港2
+      - 🇭🇰 中国-香港-F3-001-1B
+      - 🇭🇰 中国-香港-F1-001-1A
+      - 🇭🇰 香港1
+      - 🇭🇰 V1 | 香港3
+      - 🇭🇰 香港 中转-1B
+      - 🇭🇰 中国-香港-F1-001-1D
+      - 🇭🇰 中国-香港-F1-001-1E
+      - 🇭🇰 V1 | 香港7
+      - 🇭🇰 V1 | 香港5
+      - 🇭🇰 中国-香港-F1-001-1B
+      - 🇨🇳 VIP 台湾1
+      - 🇨🇳 台湾 中转
   - name: 日本节点
     type: select
     proxies:
-      - 🇯🇵 日本04
-      - 🇯🇵 日本01
-      - 🇯🇵 日本03
-      - 🇯🇵 日本02
+      - 🇯🇵 日本-新疆直连-1A
+      - 🇯🇵 日本-新疆直连-1B
+      - 🇯🇵 V1 | 日本3
+      - 🇯🇵 VIP 日本2 高速
+      - 🇯🇵 V1 | 日本2
+      - 🇯🇵 日本2
+      - 🇯🇵 日本
+      - 🇯🇵 日本1
+      - 🇯🇵 V1 | 日本4
+      - 🇯🇵 V1 | 日本1
+      - 🇯🇵 VIP 日本1 高速
+      - 🇯🇵 V1 | 日本5
   - name: 新加坡节点
     type: select
     proxies:
-      - DIRECT
+      - 🇸🇬 V1 | 新加坡2
+      - 🇸🇬 V1 | 新加坡1
+      - 🇸🇬 新加坡-1A
+      - 🇸🇬 新加坡西部
+      - 🇸🇬 新加坡-1B
+      - 🇸🇬 V1 | 新加坡3
   - name: 美国节点
     type: url-test
     url: https://www.google.com/favicon.ico
     interval: 300
     tolerance: 150
     proxies:
-      - 🇺🇸 美国 纽约01
-      - 🇺🇸 美国 纽约2
+      - 🇺🇸 V1 | 美国2-1B
+      - 🇺🇸 美国-纽约-F2-001-1A
+      - 🇺🇸 美国-拉斯维加斯-001-1F
+      - 🇺🇸 美国-纽约-F3-001-1A
+      - 🇺🇸 美国2
+      - 🇺🇸 美国-纽约-F1-001-1F
+      - 🇺🇸 美国3
+      - 🇺🇸 美国-1A
+      - 🇺🇸 V1 | 美国1-1B
+      - 🇺🇸 美国-纽约-F3-001-1C
+      - 🇺🇸 美国-1B
+      - 🇺🇸 美国-拉斯维加斯-001-1A
+      - 🇺🇸 美国 中转-1B
+      - 🇺🇸 V1 | 美国4
+      - 🇺🇸 美国1
+      - 🇺🇸 美国-纽约-F2-001-1E
+      - 🇺🇸 VIP 美国2
+      - 🇺🇸 美国-纽约-F1-001-1C
+      - 🇺🇸 美国-纽约-F3-001-1D
+      - 🇺🇸 美国-纽约-F2-001-1D
+      - 🇺🇸 V1 | 美国3
+      - 🇺🇸 美国-1C
+      - 🇺🇸 美国-拉斯维加斯-001-1C
+      - 🇺🇸 美国-拉斯维加斯-001-1B
+      - 🇺🇸 美国-纽约-F3-001-1B
+      - 🇺🇸 美国-纽约-F1-001-1B
+      - 🇺🇸 美国-纽约-F2-001-1B
+      - 🇺🇸 美国-拉斯维加斯-001-1E
+      - 🇺🇸 VIP 美国1
+      - 🇺🇸 美国-纽约-F3-001-1F
+      - 🇺🇸 V1 | 美国1-1A
+      - 🇺🇸 V1 | 美国5
+      - 🇺🇸 美国-纽约-F1-001-1A
+      - 🇺🇸 美国-纽约-F1-001-1D
+      - 🇺🇸 美国-纽约-001-1C
+      - 🇺🇸 美国 中转-1A
+      - 🇺🇸 美国-纽约-001-1F
+      - 🇺🇸 美国-纽约-001-1B
+      - 🇺🇸 美国-纽约-001-1A
+      - 🇺🇸 美国-纽约-F1-001-1E
+      - 🇺🇸 美国-纽约-001-1D
+      - 🇺🇸 美国-纽约-001-1E
+      - 🇺🇸 V1 | 美国2-1A
+      - 🇺🇸 美国-纽约-F2-001-1F
+      - 🇺🇸 美国-纽约-F3-001-1E
+      - 🇺🇸 美国-纽约-F2-001-1C
+      - 🇺🇸 美国-拉斯维加斯-001-1D
 rules:
-  - DOMAIN,gy.666666222.shop,DIRECT
-  - DOMAIN,gy.666666222.shop,DIRECT
-  - DOMAIN,hk.kfsldflk.xyz,DIRECT
-  - DOMAIN,gy.666666222.shop,DIRECT
-  - DOMAIN,gy.666666222.shop,DIRECT
-  - DOMAIN,gy.666666222.shop,DIRECT
-  - DOMAIN,gy.666666222.shop,DIRECT
-  - DOMAIN,gy.666666222.shop,DIRECT
-  - DOMAIN,gy.666666222.shop,DIRECT
-  - DOMAIN,gy.666666222.shop,DIRECT
-  - DOMAIN,gy.666666222.shop,DIRECT
-  - DOMAIN,gy.666666222.shop,DIRECT
+  - DOMAIN,xcsgp.cokecloud.top,DIRECT
+  - DOMAIN,pl01.jiasudu.buzz,DIRECT
+  - DOMAIN,cokecloudjp.cokecloud.top,DIRECT
+  - DOMAIN,dd02.b99.buzz,DIRECT
+  - DOMAIN,thtf.cokecloud.top,DIRECT
+  - DOMAIN,xj.cokecloud.top,DIRECT
+  - DOMAIN,gate.jiasudu.buzz,DIRECT
+  - DOMAIN,sg92.cctv14.xyz,DIRECT
+  - DOMAIN,svip1.pingboy.top,DIRECT
+  - IP-CIDR,207.90.237.179/32,DIRECT,no-resolve
+  - DOMAIN,biazh.mmzhk.website,DIRECT
+  - DOMAIN,hk98.cctv14.xyz,DIRECT
+  - DOMAIN,xj.cokecloud.top,DIRECT
+  - IP-CIDR,207.90.237.96/32,DIRECT,no-resolve
+  - IP-CIDR,50.114.177.145/32,DIRECT,no-resolve
+  - DOMAIN,ppx1.6128888.xyz,DIRECT
+  - DOMAIN,xcsgp.cokecloud.top,DIRECT
+  - DOMAIN,vip.baima360.com,DIRECT
+  - IP-CIDR,223.244.16.218/32,DIRECT,no-resolve
+  - DOMAIN,xckr.cokecloud.top,DIRECT
+  - IP-CIDR,207.90.236.21/32,DIRECT,no-resolve
+  - DOMAIN,cokecloudus.cokecloud.top,DIRECT
+  - DOMAIN,xctransfer1st.cokecloud.top,DIRECT
+  - IP-CIDR,176.32.35.148/32,DIRECT,no-resolve
+  - DOMAIN,hk10.jiasudu.buzz,DIRECT
+  - DOMAIN,mltf.cokecloud.top,DIRECT
+  - DOMAIN,autf.cokecloud.top,DIRECT
+  - DOMAIN,frg.cokecloud.top,DIRECT
+  - DOMAIN,ppx1.6128888.xyz,DIRECT
+  - DOMAIN,ppx1.6128888.xyz,DIRECT
+  - DOMAIN,pop.ede9314c-61e5-4c9a-8e41-275a29f5120e.heima360.cc,DIRECT
+  - DOMAIN,thtf.cokecloud.top,DIRECT
+  - DOMAIN,xctransfer1st.cokecloud.top,DIRECT
+  - DOMAIN,dd01.b99.buzz,DIRECT
+  - DOMAIN,xcsgp.cokecloud.top,DIRECT
+  - DOMAIN,svip1.pingboy.top,DIRECT
+  - DOMAIN,xctransfer1st.cokecloud.top,DIRECT
+  - IP-CIDR,207.90.237.96/32,DIRECT,no-resolve
+  - IP-CIDR,45.83.140.22/32,DIRECT,no-resolve
+  - IP-CIDR,212.192.12.73/32,DIRECT,no-resolve
+  - DOMAIN,autf.cokecloud.top,DIRECT
+  - DOMAIN,biazh.mmzhk.website,DIRECT
+  - DOMAIN,xcsgp.cokecloud.top,DIRECT
+  - IP-CIDR,176.32.35.148/32,DIRECT,no-resolve
+  - DOMAIN,xcsgp.cokecloud.top,DIRECT
+  - DOMAIN,vip.baima360.com,DIRECT
+  - DOMAIN,rutf.cokecloud.top,DIRECT
+  - DOMAIN,xctransfer1st.cokecloud.top,DIRECT
+  - IP-CIDR,212.192.12.73/32,DIRECT,no-resolve
+  - IP-CIDR,223.244.16.218/32,DIRECT,no-resolve
+  - IP-CIDR,46.17.43.122/32,DIRECT,no-resolve
+  - DOMAIN,cokecloudjp.cokecloud.top,DIRECT
+  - IP-CIDR,50.114.177.145/32,DIRECT,no-resolve
+  - DOMAIN,xcsgp.cokecloud.top,DIRECT
+  - DOMAIN,cokecloudus.cokecloud.top,DIRECT
+  - DOMAIN,cokecloudjp.cokecloud.top,DIRECT
+  - DOMAIN,de01.jiasudu.buzz,DIRECT
+  - IP-CIDR,176.32.35.148/32,DIRECT,no-resolve
+  - DOMAIN,hk9a.cctv14.xyz,DIRECT
+  - DOMAIN,ppx1.6128888.xyz,DIRECT
+  - DOMAIN,xctransfer1st.cokecloud.top,DIRECT
+  - DOMAIN,xckr.cokecloud.top,DIRECT
+  - DOMAIN,sg91.cctv14.xyz,DIRECT
+  - DOMAIN,hk96.cctv14.xyz,DIRECT
+  - DOMAIN,hk91.cctv14.xyz,DIRECT
+  - IP-CIDR,207.90.237.179/32,DIRECT,no-resolve
+  - IP-CIDR,212.192.13.68/32,DIRECT,no-resolve
+  - DOMAIN,gb01.jiasudu.buzz,DIRECT
+  - DOMAIN,xcsgp.cokecloud.top,DIRECT
+  - DOMAIN,jp93.cctv14.xyz,DIRECT
+  - DOMAIN,us02.jiasudu.buzz,DIRECT
+  - DOMAIN,fr01.jiasudu.buzz,DIRECT
+  - IP-CIDR,212.192.13.68/32,DIRECT,no-resolve
+  - DOMAIN,xctransfer1st.cokecloud.top,DIRECT
+  - DOMAIN,frtf.cokecloud.top,DIRECT
+  - IP-CIDR,103.75.188.189/32,DIRECT,no-resolve
+  - DOMAIN,freeyx.cloudflare88.eu.org,DIRECT
+  - IP-CIDR,207.90.236.21/32,DIRECT,no-resolve
+  - DOMAIN,cokecloudus.cokecloud.top,DIRECT
+  - DOMAIN,cokecloudjp.cokecloud.top,DIRECT
+  - IP-CIDR,46.17.43.122/32,DIRECT,no-resolve
+  - DOMAIN,cokecloudjp.cokecloud.top,DIRECT
+  - DOMAIN,jp02.jiasudu.buzz,DIRECT
+  - IP-CIDR,50.114.177.145/32,DIRECT,no-resolve
+  - DOMAIN,ppx1.6128888.xyz,DIRECT
+  - DOMAIN,cokecloudjp.cokecloud.top,DIRECT
+  - DOMAIN,xdtw.cokecloud.top,DIRECT
+  - IP-CIDR,207.90.237.96/32,DIRECT,no-resolve
+  - DOMAIN,svip1.pingboy.top,DIRECT
+  - DOMAIN,vip.baima360.com,DIRECT
+  - DOMAIN,xdtw.cokecloud.top,DIRECT
+  - DOMAIN,jp92.cctv14.xyz,DIRECT
+  - DOMAIN,xckr.cokecloud.top,DIRECT
+  - DOMAIN,cokecloudjp.cokecloud.top,DIRECT
+  - DOMAIN,ppx1.6128888.xyz,DIRECT
+  - DOMAIN,ppx1.6128888.xyz,DIRECT
+  - IP-CIDR,195.133.5.127/32,DIRECT,no-resolve
+  - DOMAIN,vip.baima360.com,DIRECT
+  - IP-CIDR,212.192.12.56/32,DIRECT,no-resolve
+  - DOMAIN,hk90.cctv14.xyz,DIRECT
+  - IP-CIDR,103.75.189.152/32,DIRECT,no-resolve
+  - IP-CIDR,212.192.12.73/32,DIRECT,no-resolve
+  - IP-CIDR,207.90.237.179/32,DIRECT,no-resolve
+  - DOMAIN,xcsgp.cokecloud.top,DIRECT
+  - IP-CIDR,50.114.177.145/32,DIRECT,no-resolve
+  - DOMAIN,xcsgp.cokecloud.top,DIRECT
+  - IP-CIDR,50.114.177.145/32,DIRECT,no-resolve
+  - DOMAIN,frankfurt.faforex.eu.org,DIRECT
+  - IP-CIDR,223.244.16.218/32,DIRECT,no-resolve
+  - IP-CIDR,212.192.12.73/32,DIRECT,no-resolve
+  - DOMAIN,svip1.pingboy.top,DIRECT
+  - DOMAIN,xctransfer1st.cokecloud.top,DIRECT
+  - DOMAIN,phx-plus-1ddns.faforex.eu.org,DIRECT
+  - IP-CIDR,212.192.12.73/32,DIRECT,no-resolve
+  - IP-CIDR,223.244.16.218/32,DIRECT,no-resolve
+  - DOMAIN,biazh.mmzhk.website,DIRECT
+  - DOMAIN,xcuk.cokecloud.top,DIRECT
+  - IP-CIDR,212.192.13.68/32,DIRECT,no-resolve
+  - DOMAIN,xctransfer1st.cokecloud.top,DIRECT
+  - DOMAIN,biazh.mmzhk.website,DIRECT
+  - DOMAIN,pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc,DIRECT
+  - DOMAIN,hk99.cctv14.xyz,DIRECT
+  - DOMAIN,frg.cokecloud.top,DIRECT
+  - IP-CIDR,223.244.16.218/32,DIRECT,no-resolve
+  - DOMAIN,au01.jiasudu.buzz,DIRECT
+  - DOMAIN,xctransfer1st.cokecloud.top,DIRECT
+  - DOMAIN,rutf.cokecloud.top,DIRECT
+  - IP-CIDR,207.90.237.96/32,DIRECT,no-resolve
+  - DOMAIN,xcsgp.cokecloud.top,DIRECT
+  - DOMAIN,westsg2-ddns.oraclenat.cc,DIRECT
+  - IP-CIDR,207.90.236.21/32,DIRECT,no-resolve
+  - DOMAIN,cokecloudus.cokecloud.top,DIRECT
+  - DOMAIN,ppx1.6128888.xyz,DIRECT
+  - DOMAIN,xctransfer1st.cokecloud.top,DIRECT
+  - DOMAIN,vip.baima360.com,DIRECT
+  - DOMAIN,hk05.jiasudu.buzz,DIRECT
+  - DOMAIN,ppx1.6128888.xyz,DIRECT
+  - IP-CIDR,212.192.12.73/32,DIRECT,no-resolve
+  - IP-CIDR,207.90.237.179/32,DIRECT,no-resolve
+  - DOMAIN,xdtw.cokecloud.top,DIRECT
+  - DOMAIN,biazh.mmzhk.website,DIRECT
+  - DOMAIN,cokecloudjp.cokecloud.top,DIRECT
+  - DOMAIN,us01.jiasudu.buzz,DIRECT
+  - IP-CIDR,207.90.237.96/32,DIRECT,no-resolve
+  - DOMAIN,ppx1.6128888.xyz,DIRECT
+  - DOMAIN,xcsgp.cokecloud.top,DIRECT
+  - DOMAIN,xdtw.cokecloud.top,DIRECT
+  - IP-CIDR,223.244.16.218/32,DIRECT,no-resolve
+  - IP-CIDR,223.244.16.218/32,DIRECT,no-resolve
+  - DOMAIN,vip.baima360.com,DIRECT
+  - DOMAIN,cokecloudjp.cokecloud.top,DIRECT
+  - DOMAIN,hk92.cctv14.xyz,DIRECT
+  - DOMAIN,xcsgp.cokecloud.top,DIRECT
+  - DOMAIN,xdtw.cokecloud.top,DIRECT
+  - IP-CIDR,46.17.43.122/32,DIRECT,no-resolve
+  - IP-CIDR,207.90.236.21/32,DIRECT,no-resolve
+  - DOMAIN,jp94.cctv14.xyz,DIRECT
+  - IP-CIDR,195.133.5.127/32,DIRECT,no-resolve
+  - DOMAIN,vip.baima360.com,DIRECT
+  - IP-CIDR,212.192.12.56/32,DIRECT,no-resolve
+  - DOMAIN,pop.05e2a910-30aa-49b7-8a4c-c548745c3a2d.heima360.cc,DIRECT
+  - IP-CIDR,176.32.35.148/32,DIRECT,no-resolve
+  - IP-CIDR,207.90.236.21/32,DIRECT,no-resolve
+  - IP-CIDR,195.133.5.127/32,DIRECT,no-resolve
+  - IP-CIDR,207.90.238.136/32,DIRECT,no-resolve
+  - IP-CIDR,223.244.16.218/32,DIRECT,no-resolve
+  - DOMAIN,jp91.cctv14.xyz,DIRECT
+  - IP-CIDR,212.192.13.68/32,DIRECT,no-resolve
+  - DOMAIN,mltf.cokecloud.top,DIRECT
+  - IP-CIDR,212.192.13.68/32,DIRECT,no-resolve
+  - DOMAIN,hk94.cctv14.xyz,DIRECT
+  - DOMAIN,xcsgp.cokecloud.top,DIRECT
+  - DOMAIN,turtf.cokecloud.top,DIRECT
+  - IP-CIDR,195.133.5.127/32,DIRECT,no-resolve
+  - DOMAIN,vip.baima360.com,DIRECT
+  - IP-CIDR,207.90.238.136/32,DIRECT,no-resolve
+  - IP-CIDR,50.114.177.145/32,DIRECT,no-resolve
+  - IP-CIDR,207.90.238.136/32,DIRECT,no-resolve
+  - DOMAIN,ppx1.6128888.xyz,DIRECT
+  - DOMAIN,vip.baima360.com,DIRECT
+  - IP-CIDR,46.17.43.122/32,DIRECT,no-resolve
+  - IP-CIDR,207.90.238.136/32,DIRECT,no-resolve
+  - DOMAIN,cokecloudjp.cokecloud.top,DIRECT
+  - DOMAIN,xckr.cokecloud.top,DIRECT
+  - IP-CIDR,223.244.16.218/32,DIRECT,no-resolve
+  - IP-CIDR,176.32.35.148/32,DIRECT,no-resolve
+  - IP-CIDR,212.192.13.68/32,DIRECT,no-resolve
+  - IP-CIDR,223.244.16.218/32,DIRECT,no-resolve
+  - IP-CIDR,212.192.12.56/32,DIRECT,no-resolve
+  - DOMAIN,ca01.jiasudu.buzz,DIRECT
+  - IP-CIDR,46.17.43.122/32,DIRECT,no-resolve
+  - DOMAIN,ppx1.6128888.xyz,DIRECT
+  - DOMAIN,jp01.jiasudu.buzz,DIRECT
+  - DOMAIN,vip.baima360.com,DIRECT
+  - DOMAIN,cokecloudjp.cokecloud.top,DIRECT
+  - DOMAIN,hk93.cctv14.xyz,DIRECT
+  - DOMAIN,xctransfer1st.cokecloud.top,DIRECT
+  - DOMAIN,vip.baima360.com,DIRECT
+  - IP-CIDR,207.90.236.21/32,DIRECT,no-resolve
+  - DOMAIN,frtf.cokecloud.top,DIRECT
+  - IP-CIDR,212.192.12.56/32,DIRECT,no-resolve
+  - DOMAIN,cokecloudjp.cokecloud.top,DIRECT
+  - DOMAIN,svip1.pingboy.top,DIRECT
+  - IP-CIDR,223.244.16.218/32,DIRECT,no-resolve
+  - DOMAIN,cokecloudjp.cokecloud.top,DIRECT
+  - IP-CIDR,195.133.5.127/32,DIRECT,no-resolve
+  - DOMAIN,vip.baima360.com,DIRECT
+  - DOMAIN,xdtw.cokecloud.top,DIRECT
+  - IP-CIDR,223.244.16.218/32,DIRECT,no-resolve
+  - DOMAIN,vn01.jiasudu.buzz,DIRECT
+  - DOMAIN,xcsgp.cokecloud.top,DIRECT
+  - DOMAIN,xctransfer1st.cokecloud.top,DIRECT
+  - IP-CIDR,207.90.238.136/32,DIRECT,no-resolve
+  - IP-CIDR,46.17.43.122/32,DIRECT,no-resolve
+  - IP-CIDR,212.192.12.56/32,DIRECT,no-resolve
+  - IP-CIDR,207.90.238.136/32,DIRECT,no-resolve
+  - IP-CIDR,223.244.16.218/32,DIRECT,no-resolve
+  - DOMAIN,hk97.cctv14.xyz,DIRECT
+  - DOMAIN,hk95.cctv14.xyz,DIRECT
+  - DOMAIN,idtf.cokecloud.top,DIRECT
+  - IP-CIDR,212.192.12.56/32,DIRECT,no-resolve
+  - IP-CIDR,207.90.237.179/32,DIRECT,no-resolve
+  - DOMAIN,tw01.jiasudu.buzz,DIRECT
+  - IP-CIDR,195.133.5.127/32,DIRECT,no-resolve
+  - DOMAIN,xcuk.cokecloud.top,DIRECT
+  - DOMAIN,xj88.cctv14.xyz,DIRECT
+  - DOMAIN,jp95.cctv14.xyz,DIRECT
+  - IP-CIDR,207.90.237.96/32,DIRECT,no-resolve
+  - DOMAIN,svip1.pingboy.top,DIRECT
+  - IP-CIDR,207.90.237.179/32,DIRECT,no-resolve
+  - IP-CIDR,223.244.16.218/32,DIRECT,no-resolve
+  - DOMAIN,turtf.cokecloud.top,DIRECT
+  - DOMAIN,cokecloudjp.cokecloud.top,DIRECT
+  - DOMAIN,xctransfer1st.cokecloud.top,DIRECT
+  - DOMAIN,ppx1.6128888.xyz,DIRECT
+  - DOMAIN,idtf.cokecloud.top,DIRECT
+  - DOMAIN,vip.baima360.com,DIRECT
+  - DOMAIN,sg93.cctv14.xyz,DIRECT
+  - IP-CIDR,176.32.35.148/32,DIRECT,no-resolve
+  - DOMAIN,xctransfer1st.cokecloud.top,DIRECT
+  - DOMAIN,xdtw.cokecloud.top,DIRECT
+  - DOMAIN,biazh.mmzhk.website,DIRECT
+  - DOMAIN,xdtw.cokecloud.top,DIRECT
   - MATCH,手动切换
