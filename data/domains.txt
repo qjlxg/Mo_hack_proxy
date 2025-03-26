@@ -1267,3 +1267,14 @@ https://app.jingfan.me	@#@#	静帆	@#@#		@#@#
 https://bp123.xyz	@#@#	bp123	@#@#		@#@#	
 https://panel.ofonet.net	@#@#		@#@#		@#@#	
 https://app.cloudog.me	@#@#	2025	@#@#		@#@#	
+https://nym.com	@#@#		@#@#		@#@#	/api?scheme=
+http://digimoviez.com	@#@#		@#@#		@#@#	/api?scheme=
+http://digimovie.vip	@#@#		@#@#		@#@#	/api?scheme=
+http://chosic.com	@#@#		@#@#		@#@#	/api?scheme=
+http://130.185.76.240	@#@#		@#@#		@#@#	/api?scheme=
+https://takipstar.com	@#@#		@#@#		@#@#	/api?scheme=
+https://takipcikrali.com	@#@#		@#@#		@#@#	/api?scheme=
+https://takipcizen.com	@#@#		@#@#		@#@#	/api?scheme=
+https://instamoda.org	@#@#		@#@#		@#@#	/api?scheme=
+https://takipcigir.com	@#@#		@#@#		@#@#	/api?scheme=
+https://v2.187160.xyz	@#@#		@#@#		@#@#	
