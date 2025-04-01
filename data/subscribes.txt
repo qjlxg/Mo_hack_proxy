@@ -1,7 +1,7 @@
-https://sub1.pingboy.top/api/v1/client/subscribe?token=bdbc3a48d8ac9f4bd1dae7cd859eed0f
-http://47.101.67.199:6699/api/v1/client/subscribe?token=09dfc3ff0e06946c5be0f2cc4c41332f
-https://5.44.251.106/api/v1/client/subscribe?token=013ec1bd974c2357a4e0a0dedba49461
-http://subssr.xfxvpn.me/api/v1/client/subscribe?token=9813b0f378661d084310e47ebb22421e
-https://terfghtll.dashuai.us/api/v1/client/subscribe?token=275401d3f60c90f434739c2257ededb9
-http://51.255.173.39/api/v1/client/subscribe?token=969112293a55e866b715f4f339c4917a
-https://api.heima2u.com/api/v1/client/subscribe?token=dc67f04d4711ed76651b75800d64b37f
+http://51.255.173.39/api/v1/client/subscribe?token=e605bb4524505b5da62a42ba07dc9205
+https://5.44.251.106/api/v1/client/subscribe?token=43c46f7774b101d2e19b6e9678f6fbfe
+https://terfghtll.dashuai.us/api/v1/client/subscribe?token=9b8f246ef91129f75e0f00b0ec8aefc4
+http://47.101.67.199:6699/api/v1/client/subscribe?token=dca7cfcbaa55640dd4cb76999a94949c
+http://subssr.xfxvpn.me/api/v1/client/subscribe?token=a82aa1ce855cb9ac02216779a33bdc69
+https://sub1.pingboy.top/api/v1/client/subscribe?token=0975c7ccd22baa8be85d8eba5f37855b
+https://api.heima2u.com/api/v1/client/subscribe?token=f6ad7323d7c49044c648bc0dbcfdbd9a
